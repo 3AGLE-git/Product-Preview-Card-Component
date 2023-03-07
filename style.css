@@ -278,7 +278,7 @@ a:active {
     background-color: var(--BODY-BGCOLOR);
     width: 100%;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
     padding: 0.5em;
   }
 }
