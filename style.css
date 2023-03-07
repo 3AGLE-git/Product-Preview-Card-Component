@@ -27,6 +27,9 @@
   --BODY-COLOR: hsl(228, 12%, 48%);
   --HEADER-COLOR: hsl(212, 21%, 14%);
   --HIGHLIGHT-COLOR: hsl(158, 36%, 37%);
+  --LINK-COLOR: #00f;
+  --LINK-HOVER: hsla(240, 100%, 50%, 0.719);
+  --LINK-ACTIVE: #f00;
 
   /* STANDARD PADDING */
   --PADDING-TB: 2.5em;
@@ -45,7 +48,7 @@ html {
   font-size: var(--FS);
 }
 
-body {
+.main {
   background-color: var(--BODY-BGCOLOR);
   min-width: 320px;
   height: 600px;
@@ -142,6 +145,30 @@ body {
   color: whitesmoke;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--BODY-BGCOLOR);
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0.5em;
+}
+
+a:any-link {
+  text-decoration: none;
+  color: var(--LINK-COLOR);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--LINK-HOVER);
+}
+
+a:active {
+  color: var(--LINK-ACTIVE);
+}
+
 @media screen and (min-width: 576px) {
   .mobile-img {
     display: none;
@@ -153,7 +180,7 @@ body {
     height: auto;
   }
 
-  body {
+  .main {
     background-color: var(--BODY-BGCOLOR);
     width: 665px;
     max-height: 500px;
@@ -243,5 +270,15 @@ body {
     border: none;
     margin-left: 1em;
     color: whitesmoke;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--BODY-BGCOLOR);
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0.5em;
   }
 }
