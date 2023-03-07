@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500&display=swap");
+
+/* || RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* FONTS */
+  --FF: "Montserrat", sans-sarif;
+  --HEADING-FF: "Fraunces", cursive;
+  --FS: 1rem;
+  --HEADING-FS: 2.3em;
+
+  /* COLORS */
+  --BGCOLOR: hsl(30, 38%, 92%);
+  --BODY-BGCOLOR: hsl(0, 0%, 100%);
+  --BODY-COLOR: hsl(228, 12%, 48%);
+  --HEADER-COLOR: hsl(212, 21%, 14%);
+  --HIGHLIGHT-COLOR: hsl(158, 36%, 37%);
+
+  /* STANDARD PADDING */
+  --PADDING-TB: 2.5em;
+  --PADDING-SIDES: 2em;
+
+  /* STANDARD MARGIN */
+  --MARGIN: 10em 0;
+  --MARGIN-BTM: 1em;
+}
+
+/* || GENERAL STYLES */
+
+html {
+  background-color: var(--BGCOLOR);
+  font-family: var(--FF);
+  font-size: var(--FS);
+}
+
+body {
+  background-color: var(--BODY-BGCOLOR);
+  min-width: 320px;
+  height: 600px;
+  margin: 1em 0.9em;
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  margin-bottom: 1em;
+}
+
+.hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.info {
+  margin: 0 1.4em;
+}
+
+.info__h1 {
+  text-transform: uppercase;
+  color: var(--BODY-COLOR);
+  letter-spacing: 0.4em;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.info__h2 {
+  color: var(--HEADER-COLOR);
+  font-family: var(--HEADING-FF);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.info__p {
+  color: var(--BODY-COLOR);
+  font-size: 0.9em;
+  line-height: 1.6em;
+  margin-bottom: 1.5em;
+  font-weight: 500;
+}
+
+.info__price {
+  margin-bottom: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.new-price {
+  color: var(--HIGHLIGHT-COLOR);
+  font-family: var(--HEADING-FF);
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.old-price {
+  color: var(--BODY-COLOR);
+  margin-left: 1.5em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.button {
+  background-color: var(--HIGHLIGHT-COLOR);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-left: 0em;
+  border-radius: 10px;
+}
+
+.info__cart {
+  font-weight: 700;
+  background-color: var(--HIGHLIGHT-COLOR);
+  border: none;
+  margin-left: 0.8em;
+  color: whitesmoke;
+}
