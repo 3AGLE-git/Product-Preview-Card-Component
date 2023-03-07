@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.desktop-img {
+  display: none;
+}
+
 /* || VARIABLES */
 
 :root {
@@ -60,7 +64,7 @@ body {
   margin-bottom: 1em;
 }
 
-.hero {
+.mobile-hero {
   display: block;
   width: 100%;
   height: auto;
@@ -136,4 +140,108 @@ body {
   border: none;
   margin-left: 0.8em;
   color: whitesmoke;
+}
+
+@media screen and (min-width: 576px) {
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    background-color: var(--BODY-BGCOLOR);
+    width: 665px;
+    max-height: 500px;
+    margin: 0 auto;
+    margin-top: -4em;
+    border-radius: 15px;
+  }
+
+  .container {
+    margin: var(--MARGIN);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .desktop-hero {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    min-height: 100%;
+  }
+
+  .info {
+    max-width: 80%;
+    margin: 2em 0;
+    margin-left: 1.7em;
+  }
+
+  .info__h1 {
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    font-family: var(--FF);
+    font-size: 0.8em;
+    color: var(--BODY-COLOR);
+    letter-spacing: 0.3em;
+    font-weight: 500;
+  }
+
+  .info__h2 {
+    margin-bottom: var(--MARGIN-BTM);
+    font-family: var(--HEADING-FF);
+    color: var(--HEADER-COLOR);
+    font-weight: bolder;
+    line-height: 1em;
+    font-size: var(--HEADING-FS);
+  }
+
+  .info__p {
+    margin-bottom: 1.5em;
+    color: var(--BODY-COLOR);
+    font-size: 1em;
+    line-height: 1.7em;
+  }
+
+  .info__price {
+    margin-bottom: 2em;
+  }
+
+  .new-price {
+    font-family: var(--HEADING-FF);
+    font-size: 2rem;
+    color: var(--HIGHLIGHT-COLOR);
+    font-weight: 700;
+  }
+
+  .old-price {
+    padding-left: 1em;
+    margin: 0;
+    font-family: var(--FF);
+    font-size: 0.9em;
+    color: var(--BODY-COLOR);
+    text-decoration: line-through;
+  }
+
+  .button {
+    margin-top: 0.3em;
+    background-color: var(--HIGHLIGHT-COLOR);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0em;
+    border-radius: 10px;
+  }
+
+  .info__cart {
+    background-color: var(--HIGHLIGHT-COLOR);
+    border: none;
+    margin-left: 1em;
+    color: whitesmoke;
+  }
 }
