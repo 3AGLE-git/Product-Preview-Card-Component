@@ -1,4 +1,4 @@
-# Frontend Mentor - Product preview card component solution
+# Product preview card component
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -24,4 +24,4 @@ Users should be able to:
 
 ### What I learned
 
-This challenge took longer than i expected but was able to learn when and how to make use of width and height in your page.
+This challenge took longer than i expected but i was able to learn when and how to make use of width and height in your page.
